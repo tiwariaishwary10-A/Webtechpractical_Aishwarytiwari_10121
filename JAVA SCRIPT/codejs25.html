@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>API 1</title>
+</head>
+<body>
+<script>
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+.then(res => res.json())
+.then(data => document.body.innerHTML = data.title)
+</script>
+</body>
+</html>
